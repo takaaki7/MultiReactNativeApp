@@ -1,0 +1,15 @@
+{
+  "name": "MyReactNativeApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-sub-app": "react-native bundle --platform android --entry-file index.sub.js --bundle-output index.sub.bundle.js --dev false",
+    "start-sub-app-server": "./node_modules/http-server/bin/http-server"
+  },
+  "dependencies": {
+    "react": "16.6.1",
+    "react-native": "^0.57.7",
+    "http-server": "0.11.1"
+  }
+}
